@@ -118,7 +118,12 @@ def _validate_address(a: AddressLike) -> None:
     assert _addr_to_str(a)
 
 
-_chainid_to_name = {1: "mainnet", 4: "rinkeby"}
+_chainid_to_name = {1: "mainnet",
+                    3: "ropsten",
+                    4: "rinkeby",
+                    5: "gorli",
+                    42: "kovan",
+                    }
 
 
 class Uniswap:
